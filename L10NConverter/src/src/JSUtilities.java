@@ -354,7 +354,7 @@ public static  boolean addBOM(File tempDir, File fileToConvert) throws Exception
           
 			if (firstLine) {
 				
-				s = removeUTF8BOM(s);
+				s = addUTF8BOM(s);
 				firstLine = false;
 				
 			}
@@ -386,6 +386,14 @@ public static  boolean addBOM(File tempDir, File fileToConvert) throws Exception
 		JSUtilities.copyFile(tempFile, fileToConvert);
 		return true;
 	}
+/**
+ * Removes the UTF8 BOM marker from the document
+ * @param line 
+ */
+private static  String addUTF8BOM(String line) {
+	line = line.substring(1);
+	return line;
+}
 }
 
 
