@@ -19,6 +19,7 @@ public class Model extends Observable {
 	private RemoveBOM removeBOM;
 	private ConvertUTF8 convertUTF8;
 	private AddEmptyLine addEmptyLine;
+	private AddBOM addBOM;
 
 	public Model (){
 	}
@@ -65,6 +66,17 @@ public class Model extends Observable {
 		// Send Conversion Task to Swing Worker
 		addEmptyLine = new AddEmptyLine(this,filesString);
 		addEmptyLine.execute();
+	}
+	
+	public void AddBOM(List<String> filesString) throws Exception{
+
+		setValue(1);
+		setChanged();
+		notifyObservers();
+
+		// Send Conversion Task to Swing Worker
+		addBOM = new AddBOM(this,filesString);
+		addBOM.execute();
 	}
 
 	public void setValue(int value){

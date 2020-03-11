@@ -58,6 +58,8 @@ public class ViewFrame implements Observer{
 	JCheckBox checkbox1;
 	JCheckBox checkbox2;
 	JCheckBox checkbox3;
+	JCheckBox checkbox4;
+
 	int pX, pY = 0;
 
 	/**
@@ -253,10 +255,12 @@ public class ViewFrame implements Observer{
 		
 		checkbox3=new JCheckBox("Add Empty-line");
 		
-		
+		checkbox4=new JCheckBox("Add BOM");
+
 		optionalPanel.add(checkbox1,optionalPanel);
 		optionalPanel.add(checkbox2,optionalPanel);
 		optionalPanel.add(checkbox3,optionalPanel);
+		optionalPanel.add(checkbox4,optionalPanel);
 		
 		return optionalPanel;
 	}
@@ -272,6 +276,7 @@ public class ViewFrame implements Observer{
 		checkbox1.addActionListener(controller);
 		checkbox2.addActionListener(controller);
 		checkbox3.addActionListener(controller);
+		checkbox4.addActionListener(controller);
 		
 	}
 
@@ -352,6 +357,9 @@ public class ViewFrame implements Observer{
 	}
 	public JCheckBox getCheckBox3() {
 		return checkbox3;
+	}
+	public JCheckBox getCheckBox4() {
+		return checkbox4;
 	}
 
 

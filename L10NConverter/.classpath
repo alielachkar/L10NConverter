@@ -7,6 +7,10 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/aelachkar/Perforce/aelachkar_COOPPF161409_7416/Localization/_Tools/L10NConverter/libs/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aelachkar/Desktop/L10NConverter/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aelachkar/Desktop/L10NConverter/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aelachkar/Desktop/L10NConverter/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aelachkar/Desktop/L10NConverter/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aelachkar/Desktop/L10NConverter/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
